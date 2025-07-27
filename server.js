@@ -15,7 +15,9 @@ const io = socketIo(server, {
     }
 });
 
-app.use(cors());
+app.use(cors({
+    origin: "https://kahoot-cli.netlify.app" // THÊM CẤU HÌNH CHO APP.USE(CORS)
+}));
 
 const PORT = process.env.PORT || 5000;
 
