@@ -10,7 +10,7 @@ const server = http.createServer(app);
 
 const io = socketIo(server, {
     cors: {
-        origin: "https://kahoot-cli.netlify.app/",
+        origin: "https://kahoot-cli.netlify.app",
         methods: ["GET", "POST"]
     }
 });
