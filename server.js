@@ -10,7 +10,7 @@ const server = http.createServer(app);
 
 const io = socketIo(server, {
     cors: {
-        origin: "http://localhost:3000",
+        origin: "https://kahoot-cli.netlify.app/",
         methods: ["GET", "POST"]
     }
 });
@@ -440,5 +440,5 @@ function endGame() {
 
 server.listen(PORT, () => {
     console.log(`Server đang chạy trên cổng ${PORT}`);
-    console.log(`Admin Panel (Front-end): http://localhost:3000 (Chọn 'Tôi là Admin')`);
+    console.log(`Admin Panel (Front-end): https://kahoot-cli.netlify.app/ (Chọn 'Tôi là Admin')`);
 });
