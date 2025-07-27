@@ -1,0 +1,27 @@
+# Dependencies
+server/node_modules
+server/.pnp
+server/.pnp.js
+
+# Testing
+server/coverage
+
+# Production
+server/build
+server/dist
+
+# Miscellaneous
+server/.DS_Store
+server/.env
+server/.env.local
+server/.env.development.local
+server/.env.test.local
+server/.env.production.local
+server/npm-debug.log*
+server/yarn-debug.log*
+server/yarn-error.log*
+server/.idea/
+server/.vscode/
+server/*.log
+server/*.sqlite
+server/*.sqlite-journal
